@@ -27,6 +27,11 @@
 *example*
 *sopc_*
 *.ddb
+!/example/
+
+# VeriLogger Pro
+*.dsk
+*.key
 
 # Explicitly add any text files used
 *.txt
@@ -61,9 +66,15 @@ hc_output/
 *.str
 *.jou
 vivado_*.zip
-.Xil
+.Xil/
+!*.xdc
+*.xpr
+
+## Icarus Verilog
+*.vvp
 
 ##	Python
+!requirements.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -168,3 +179,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Krita
+.*-autosave.kra
